@@ -54,7 +54,7 @@ $ docker push mycluster.icp:8500/<kubernetes_namespace>/ace-microclimate:latest
 
 ## Create project and pipeline in Microclimate
 1. Access Microclimate portal
-2. Click on 'Import Project', and specify the github repository link (i.e. this repository) and access credentials
+2. Click on 'Import Project', and specify the github repository link (e.g. this repository) and access credentials
 3. Select 'Unspecified' project type
 4. In 'Overview', enable the project
 5. Click on 'pipeline'
