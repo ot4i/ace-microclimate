@@ -64,7 +64,7 @@ Note: at this point automated builds are not enabled for ACE projects in Microcl
 
 ## Demonstration
 
-Follow steps in https://github.ibm.com/claudio-tag/ace-for-microclimate/tree/master/demonstration
+Follow steps in https://github.com/ot4i/ace-microclimate/tree/master/demonstration
 
 ## Remove Helm Release
 ~~~
