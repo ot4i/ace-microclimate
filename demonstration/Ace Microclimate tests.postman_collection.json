@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "3903fa4a-70ea-4880-93c6-bc39f9c6d63d",
+		"name": "Ace Microclimate tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://10.99.41.27:30706/TemperatureConverter/TemperatureConverter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><tns0:Envelope xmlns:tns0=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:tns1=\"http://TemperatureConverter\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n  <tns0:Header/>\n  <tns0:Body>\n    <tns1:CtoF>\n      <TemperatureInC>0</TemperatureInC>\n    </tns1:CtoF>\n  </tns0:Body>\n</tns0:Envelope>"
+				},
+				"url": {
+					"raw": "http://10.99.41.27:30706/TemperatureConverter/TemperatureConverter",
+					"protocol": "http",
+					"host": [
+						"10",
+						"99",
+						"41",
+						"27"
+					],
+					"port": "30706",
+					"path": [
+						"TemperatureConverter",
+						"TemperatureConverter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.99.41.27:30706/Transformation_Map",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<SaleEnvelope>\n\t<Header>\n\t\t<SaleListCount>1</SaleListCount>\n\t\t<TransformationType>xsl</TransformationType>\n\t</Header>\n\t<SaleList>\n\t\t<Invoice>\n\t\t\t<Initial>K</Initial>\n\t\t\t<Initial>A</Initial>\n\t\t\t<Surname>Braithwaite</Surname>\n\t\t\t<Item>\n\t\t\t\t<Code>00</Code>\n\t\t\t\t<Code>01</Code>\n\t\t\t\t<Code>02</Code>\n\t\t\t\t<Description>Twister</Description>\n\t\t\t\t<Category>Games</Category>\n\t\t\t\t<Price>00.30</Price>\n\t\t\t\t<Quantity>01</Quantity>\n\t\t\t</Item>\n\t\t\t<Item>\n\t\t\t\t<Code>02</Code>\n\t\t\t\t<Code>03</Code>\n\t\t\t\t<Code>01</Code>\n\t\t\t\t<Description>The Times Newspaper</Description>\n\t\t\t\t<Category>Books and Media</Category>\n\t\t\t\t<Price>00.20</Price>\n\t\t\t\t<Quantity>01</Quantity>\n\t\t\t</Item>\n\t\t\t<Balance>00.50</Balance>\n\t\t\t<Currency>Sterling</Currency>\n\t\t</Invoice>\n\t\t<Invoice>\n\t\t\t<Initial>T</Initial>\n\t\t\t<Initial>J</Initial>\n\t\t\t<Surname>Dunnwin</Surname>\n\t\t\t<Item>\n\t\t\t\t<Code>04</Code>\n\t\t\t\t<Code>05</Code>\n\t\t\t\t<Code>01</Code>\n\t\t\t\t<Description>The Origin of Species</Description>\n\t\t\t\t<Category>Books and Media</Category>\n\t\t\t\t<Price>22.34</Price>\n\t\t\t\t<Quantity>02</Quantity>\n\t\t\t</Item>\n\t\t\t<Item>\n\t\t\t\t<Code>06</Code>\n\t\t\t\t<Code>07</Code>\n\t\t\t\t<Code>01</Code>\n\t\t\t\t<Description>Microscope</Description>\n\t\t\t\t<Category>Miscellaneous</Category>\n\t\t\t\t<Price>36.20</Price>\n\t\t\t\t<Quantity>01</Quantity>\n\t\t\t</Item>\n\t\t\t<Balance>81.84</Balance>\n\t\t\t<Currency>Euros</Currency>\n\t\t</Invoice>\n\t</SaleList>\n\t<Trailer>\n\t\t<CompletionTime>12.00.00</CompletionTime>\n\t</Trailer>\n</SaleEnvelope>"
+				},
+				"url": {
+					"raw": "http://10.99.41.27:30706/Transformation_Map",
+					"protocol": "http",
+					"host": [
+						"10",
+						"99",
+						"41",
+						"27"
+					],
+					"port": "30706",
+					"path": [
+						"Transformation_Map"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.99.41.27:30706/benssimplerestapi/v1/object",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://10.99.41.27:30706/benssimplerestapi/v1/object",
+					"protocol": "http",
+					"host": [
+						"10",
+						"99",
+						"41",
+						"27"
+					],
+					"port": "30706",
+					"path": [
+						"benssimplerestapi",
+						"v1",
+						"object"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

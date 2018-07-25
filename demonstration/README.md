@@ -1,7 +1,7 @@
 # Demonstration
 
 ## Deploy Helm chart via Microclimate
-1. Trigger build from Microclimate Jenkins
+1. Trigger build from Microclimate
 
 ## Test Deployment
 2. Check deployment and service in ICP, note down NodePort for the ACE Server.
@@ -25,22 +25,24 @@ with Input_TransformationMap.xml as payload.
 $ curl -X GET http://<ICP proxy IP>:<ACE Server NodePort>/benssimplerestapi/v1/object
 ~~~
 
+Note: Steps 4, 5, and 6 can also be executed in Postman, using the collection in this folder.
+
 ## Make change to code
 Make a simple change to the code:
 
 7. For example, in `ace-pi/BensSimpleRESTAPI/getObject_Compute.esql` change the code FROM
 ~~~
 SET OutputRoot.JSON.Data.Output.VersionOfThisRESTAPI = '1';
-SET OutputRoot.JSON.Data.Output.WhoIsGoingToWinTheWorldCup = 'England';
+SET OutputRoot.JSON.Data.Output.WhoIsGoingToWinTheWorldCup = 'Brazil';
 ~~~
 TO
 ~~~
 SET OutputRoot.JSON.Data.Output.VersionOfThisRESTAPI = '2';
-SET OutputRoot.JSON.Data.Output.WhoIsGoingToWinTheWorldCup = 'Brazil';
+SET OutputRoot.JSON.Data.Output.WhoIsGoingToWinTheWorldCup = 'France';
 ~~~
 
 ## Redeploy Helm chart via Microclimate
-8. Trigger build from Microclimate Jenkins
+8. Trigger build from Microclimate
 
 ## Test the change
 9. Await for successful deployment.
