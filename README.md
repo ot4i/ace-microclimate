@@ -1,6 +1,5 @@
 # IBM APP CONNECT ENTERPRISE for Microclimate
 
-![ACE Logo](https://raw.githubusercontent.com/ot4i/ace-helm/master/appconnect_enterprise_logo.svg?sanitize=true)
 
 ## Introduction
 
@@ -64,7 +63,7 @@ Note: at this point automated builds are not enabled for ACE projects in Microcl
 
 ## Demonstration
 
-Follow steps in https://github.com/ot4i/ace-microclimate/tree/master/demonstration
+Follow steps in https://github.com/ot4i/ace-microclimate/tree/main/demonstration
 
 ## Remove Helm Release
 ~~~
